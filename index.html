@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senumi Thiwanya | Psychology Professional</title>
+    <!-- Icons and Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume-container">
+        <header>
+            <div class="profile-img-container">
+                <img src="img.jpg" alt="Senumi Thiwanya" class="profile-img">
+            </div>
+            <div class="header-text">
+                <h1>Senumi Thiwanya</h1>
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> [number]</span>
+                    <span><i class="fas fa-envelope"></i> [email]]@gmail.com</span>
+                    <span><i class="fas fa-location-dot"></i> [City, Country]</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="summary reveal">
+                <h2><i class="fas fa-user"></i> Professional Summary</h2>
+                <p>
+                    Dedicated and compassionate Psychology and Counselling undergraduate seeking a challenging, paid internship opportunity to gain supervised practical experience in mental health support. Proficient in key counselling theories, ethical best practices, and foundational psychological assessment. Highly developed interpersonal skills, including strong empathy, active listening, and effective communication, with a commitment to fostering positive client well-being.
+                </p>
+            </section>
+
+            <section class="experience reveal">
+                <h2><i class="fas fa-briefcase"></i> Experience</h2>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <span>[Job Title]</span>
+                        <span>Date – Date</span>
+                    </div>
+                    <div class="item-sub">
+                        <span>[Company Name]</span>
+                        <span>Place</span>
+                    </div>
+                    <ul>
+                        <li>Spearheaded [Key Responsibility 1] initiatives, resulting in [Quantifiable Result].</li>
+                        <li>Managed and mentored a team of [Number] employees, overseeing daily operations.</li>
+                        <li>Developed and implemented [Project/Strategy], increasing client satisfaction scores by 20%.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <span>[Previous Job Title]</span>
+                        <span>Date – Date</span>
+                    </div>
+                    <div class="item-sub">
+                        <span>[Previous Company Name]</span>
+                        <span>Place</span>
+                    </div>
+                    <ul>
+                        <li>Streamlined the documentation process, improving departmental efficiency by 10%.</li>
+                        <li>Received "Outstanding Contributor Award" for exceptional performance in client relations.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="education reveal">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="education-item">
+                    <div class="item-header">
+                        <span>BSc. (Hons) Psychology and Counselling</span>
+                        <span>[Expected Graduation]</span>
+                    </div>
+                    <div class="item-sub">
+                        <span>[University Name]</span>
+                        <span>Place</span>
+                    </div>
+                    <p style="margin-top: 10px; font-size: 0.9rem; color: #64748b;">
+                        <strong>Relevant Coursework:</strong> Research Methods, Abnormal Psychology, Cognitive Behavioural Therapy (CBT), Developmental Psychology.
+                    </p>
+                </div>
+            </section>
+
+            <section class="skills reveal">
+                <h2><i class="fas fa-brain"></i> Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Data Analysis (SPSS)</span><span>85%</span></div>
+                            <div class="progress-bar"><div class="progress-fill" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Case Management (CMS)</span><span>90%</span></div>
+                            <div class="progress-bar"><div class="progress-fill" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Microsoft Office Suite</span><span>95%</span></div>
+                            <div class="progress-bar"><div class="progress-fill" data-width="95%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Clinical & Soft Skills</h3>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Active Listening</span><span>95%</span></div>
+                            <div class="progress-bar"><div class="progress-fill" data-width="95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Ethical Awareness</span><span>100%</span></div>
+                            <div class="progress-bar"><div class="progress-fill" data-width="100%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Empathy & Rapport Building</span><span>98%</span></div>
+                            <div class="progress-bar"><div class="progress-fill" data-width="98%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="awards reveal">
+                <h2><i class="fas fa-trophy"></i> Awards</h2>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 10px; color: #64748b;">
+                    <span>[Award Name, e.g., Dean's List for Academic Excellence]</span>
+                    <span>Date</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="no-print">
+        <button onclick="window.print()" class="print-btn">
+            <i class="fas fa-download"></i> Download PDF
+        </button>
+    </div>
+
+    <script>
+        // Reveal sections on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Animate progress bars
+                    const progressBars = entry.target.querySelectorAll('.progress-fill');
+                    progressBars.forEach(bar => {
+                        bar.style.width = bar.getAttribute('data-width');
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
